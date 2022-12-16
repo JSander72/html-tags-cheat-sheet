@@ -5,10 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "msedge",
+            "type": "vscode-edge-devtools.debug",
+            "request": "attach",
+            "name": "Attach to Microsoft Edge and open the Edge DevTools",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "type": "vscode-edge-devtools.debug",
             "request": "launch",
-            "name": "Open html-tags-cheat-sheet.html",
-            "file": "/home/jamessanders/aa-projects/html-tags-cheat-sheet/html-tags-cheat-sheet.html"
-        }
+            "name": "Launch Microsoft Edge and open the Edge DevTools",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        
     ]
 }
